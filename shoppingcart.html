@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Shopping Cart</title>
+
+            <link rel="stylesheet" href="styleshop.css">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div>
+            <img src="hhh-logo.jpg" alt="made by mrdahlman" title="Hhh logo" width="100" height="100">
+        </div>
+
+        <div class="mitten">
+
+            <h1>Shopping cart</h1>
+            
+        </div>
+
+    </header>
+
+    <nav>
+
+        <a class="knapp" href="home.html" title="Home" alt="Go back to home">HOME</a>
+        <a class="knapp" href="hoodies.html" title="Hoodies" alt="Go to hypebeasts">HOODIES</a>
+        <a class="knapp" href="hardware.html" title="Hardware" alt="Go to hardware">HARDWARE</a>
+        <a class="knapp" href="hypebeasts.html" title="Hypebeasts" alt="Go to hypebeasts">HYPEBEASTS</a>
+
+    </nav>
+
+    <form>
+        <h1>Order:</h1>
+        <label for="product">PRODUCT:</label>
+        <select id="product" name="product">
+            <option>PICK A PRODUCT</option>
+            <option>Polar Skate Patch Hoodie</option>
+            <option>Civilist Mini Logo</option>
+            <option>Nike Dunk Low Jumbo Reverse Panda</option>
+            <option>Carhartt Slippers</option>
+            <option>Independent | Polished Standard STG 11</option>
+            <option>OJ Wheels 95a</option>
+            <option>Creature Logo deck</option>
+        </select>
+        <br><br>
+
+        <p>IF YOU PICKED A HOODIE, PICK A SIZE</p>
+        <label for="hoodie size">HOODIE SIZE:</label>
+        <select id=" hoodie size" name="hoodie size">
+            <option>PICK A SIZE</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <br><br>
+
+        <p>IF YOU PICKED A SNEAKER, PICK A SIZE</p>
+        <label for="sneaker size">SNEAKER SIZE:</label>
+        <select id="sneaker size" name="sneaker size">
+            <option>PICK A SIZE</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+        </select>
+        <br><br>
+
+        <p>IF YOU PICKED A BOARD, PICK A SIZE</p>
+        <label for="board size">BOARD SIZE:</label>
+        <select id="board size" name="board size">
+            <option>PICK A SIZE</option>
+            <option>8.0</option>
+            <option>8.25</option>
+            <option>8.38</option>
+            <option>8.5</option>
+        </select>
+        <br><br>
+
+        <label for="adress">SHIPPING ADRESS:</label>
+    <input type="text" name="adress" id="adress" required><br><br>
+
+        <p>EMAIL FOR NEWSLETTER</p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <input type="submit" value="Purchase">
+
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <h3>Help</h3>
+            <p>Customer Service</p>
+            <p>Returns</p>
+        </div>
+
+        <div class="footer">
+            <h3>Hhh</h3>
+            <br>
+            <a href="https://www.google.com/maps/dir//55.5901181,12.995515/@55.5903668,12.9955676,16.71z/data=!4m2!4m1!3e0?entry=ttu" alt="Länk till adress" title="Ön" target="_blank">
+                Visit us
+            </a>
+        </div>
+
+        <div class="footer">
+            <h3>Social</h3>
+            <br>
+            <a href="https://www.instagram.com/oliverknilsson/" title="IG link" target="_blank" alt="Länk till instagram">Instagram</a>
+        </div>
+
+        <div class="footer">
+            <h3>Contact</h3>
+            <p>
+                Hhh - Hoodies, Hardware &amp; Hypebeasts<br>
+                Island in the middle of the Pildammspark<br>
+                214 28<br>
+                Malmoe<br>
+                Tele: 072 336 37 83<br>
+                Email: <a href = "mailto: oliverknilsson@gmail.com">oliverknilsson@gmail.com</a>
+            </p>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion">HELP</button>
+        <div class="panel">
+    
+        <p>Customer Service</p>
+        <p>Returns</p>
+    
+        </div>
+    
+            <button class="accordion">HHH</button>
+        
+        <div class="panel">
+            <p><a href="https://www.google.com/maps/dir//55.5901181,12.995515/@55.5903668,12.9955676,16.71z/data=!4m2!4m1!3e0?entry=ttu" alt="Länk till adress" title="Ön" target="_blank">
+                    Visit us
+                </a></p>
+        </div>
+    
+            <button class="accordion">CONTACT</button>
+        <div class="panel">
+            <p> Hhh - Hoodies, Hardware &amp; Hypebeasts<br>
+                Island in the middle of the Pildammspark<br>
+                214 28<br>
+                Malmoe<br>
+                Tele: 072 336 37 83<br>
+                Email: <a href="mailto: oliverknilsson@gmail.com">oliverknilsson@gmail.com</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <script>    
+    
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            
+            this.classList.toggle("active");
+        
+            
+            var panel = this.nextElementSibling;
+        if (panel){
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+        }
+          });
+        }
+
+        </script>
+        
+    
+</body>
+</html>

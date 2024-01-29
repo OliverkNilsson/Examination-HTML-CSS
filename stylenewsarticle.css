@@ -1,0 +1,136 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    border-bottom: solid black;
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header h1{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Dela Gothic One', cursive;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    font-family: 'Pixelify Sans', cursive;
+    display: flex;
+    width: 90%;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+article{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+article h2{
+    display: flex;
+    font-size: 50px;
+    align-content: center;
+}
+.mitten{
+    align-items: center;
+    justify-content: space-around;
+}
+footer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px; padding-right: 50px;
+    background-color: black;
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+}
+.lineheight{
+    line-height: 2;
+}
+
+footer a{
+    color: white;
+}
+a:hover{
+    transform: scale(110%);
+    transition: .5s;
+}
+
+.accordion {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+  }
+  
+  .panel {
+    padding: 0 14px;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    overflow: hidden;
+    font-size: 12px;
+  }
+
+@media screen and (max-width: 700px)
+{
+    
+    nav{
+        padding: 0;
+        font-size: 10px;
+        gap: 10px;
+    }
+    article{
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .remove{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+    header h1{
+        font-size: 15px;
+    }
+    article h2{
+        font-size: 30px;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px){
+    .footer{
+        display: none;
+    }
+}
+@media screen and (min-width: 901px){
+    .accordion{
+        display: none;
+    }
+}
