@@ -1,267 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - HOODIES, HARDWARE &amp; HYPEBEASTS!</title>
 
-        <title>Home - HOODIES, HARDWARE &amp; HYPEBEASTS!</title>
+    <link rel="stylesheet" href="stylemain.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-            <link rel="stylesheet" href="stylemain.css">
-            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-            
-
-</head>
-
-<body>
-
+  <body>
     <header>
+      <img
+        class="logosize"
+        src="pictures/hhh-logo.jpg"
+        alt="made by mrdahlman"
+        title="Company logo"
+      />
+      <nav class="remove">
+        <a
+          class="knapp"
+          href="hoodies.html"
+          title="Go to hoodies"
+          alt="Go to hoodies"
+          >HOODIES</a
+        >
+        <a
+          class="knapp"
+          href="hardware.html"
+          title="Go to hardware"
+          alt="Go to hardware"
+          >HARDWARE</a
+        >
+        <a
+          class="knapp"
+          href="hypebeasts.html"
+          title="Go to hypebeast"
+          alt="Go to hypebeast"
+          >HYPEBEASTS</a
+        >
+      </nav>
+      <a class="remove" href="shoppingcart.html" alt="Shopping cart">
+        <img
+          src="pictures/Cart-ICON.jpg"
+          alt="The shopping cart"
+          title="A Shopping Cart"
+          width="100"
+          height="100"
+        />
+      </a>
 
-        <img class="logosize" src="hhh-logo.jpg" alt="made by mrdahlman" title="Company logo">
-        <nav class="remove">
-
-            <a class="knapp" href="hoodies.html" title="Go to hoodies" alt="Go to hoodies">HOODIES</a>
-            <a class="knapp" href="hardware.html" title="Go to hardware" alt="Go to hardware">HARDWARE</a>
-            <a class="knapp" href="hypebeasts.html" title="Go to hypebeast" alt="Go to hypebeast">HYPEBEASTS</a>
-
-        </nav>
-        <a class="remove" href="shoppingcart.html" alt="Shopping cart">
-            <img src="Cart-ICON.jpg" alt="The shopping cart" title="A Shopping Cart" width="100" height="100">
+      <div id="mobileNav">
+        <a href="#home" class="active">.</a>
+        <div id="link-container">
+          <a href="hoodies.html">HOODIES</a>
+          <a href="hardware.html">HARDWARE</a>
+          <a href="hypebeasts.html">HYPEBEASTS</a>
+          <a href="shoppingcart.html">Cart</a>
+        </div>
+        <a href="javascript:void(0);" id="icon" onclick="toggleMenu()">
+          <div class="burger">
+            <div class="bun"></div>
+            <div class="meat"></div>
+            <div class="bun"></div>
+          </div>
         </a>
-
-        <div id="mobileNav">
-            <a href="#home" class="active">.</a>
-            <div id="link-container">
-                <a href="hoodies.html">HOODIES</a>
-                <a href="hardware.html">HARDWARE</a>
-                <a href="hypebeasts.html">HYPEBEASTS</a>
-                <a href="shoppingcart.html">Cart</a>
-            </div>
-            <a href="javascript:void(0);" id="icon" onclick="toggleMenu()">
-                <div class="burger">
-                    <div class="bun"></div>
-                    <div class="meat"></div>
-                    <div class="bun"></div>
-                </div>
-            </a>
-        </div>
-
-        
-
+      </div>
     </header>
-    
-        <div>
-            <img src="landningsbild.jpg" alt="Landingpicture with text The premier online shop for Skateboards, sneakerheads and streetwear" width="100%">
-        </div>
 
-        <h2 class="titel">Hot Stuff</h2>
+    <div>
+      <img
+        src="pictures/landningsbild.jpg"
+        alt="Landingpicture with text The premier online shop for Skateboards, sneakerheads and streetwear"
+        width="100%"
+      />
+    </div>
+
+    <h2 class="titel">Hot Stuff</h2>
 
     <aside>
+      <div class="hotstuff">
+        <a href="singleproduct.html" alt="A Creature deck">
+          <img
+            src="pictures/creaturetimewarp.png"
+            title="A creature deck"
+            alt="A creature deck"
+            width="250"
+            height="250"
+          />
+        </a>
+        <p>Creature Time Warp deck</p>
+        <p>1 699 kr</p>
+      </div>
 
-        <div class="hotstuff">
-            <a href="singleproduct.html" alt="A Creature deck">
-                <img src="creaturetimewarp.png" title="A creature deck" alt="A creature deck" width="250" height="250">
-            </a>
-                <p>Creature Time Warp deck</p>
-                <p>1 699 kr</p>
+      <div class="hotstuff">
+        <a href="singleproduct.html" alt="A Polar Skate hoodie">
+          <img
+            src="pictures/Polar-Skate-Patchhoodie.jpg"
+            title="A Polar Skate hoodie"
+            alt="A Polar Skate hoodie"
+            width="250"
+            height="250"
+          />
+        </a>
+        <p>Polar Skate Patch Hoodie</p>
+        <p>1 449 kr</p>
+      </div>
 
-        </div>
+      <div class="hotstuff">
+        <a href="singleproduct.html" alt="Dunk Reverse Panda">
+          <img
+            src="pictures/nikedunkpandareverse.jpeg.jpg"
+            title="A Nike Dunk Panda Reverse sneaker"
+            alt="A Nike Dunk Panda Reverse sneaker"
+            width="250"
+            height="250"
+          />
+        </a>
+        <p>Nike Dunk Low Jumbo Reverse Panda</p>
+        <p>1 399 kr</p>
+      </div>
 
-        <div class="hotstuff">
-            <a href="singleproduct.html" alt="A Polar Skate hoodie">
-
-                <img src="Polar-Skate-Patchhoodie.jpg" title="A Polar Skate hoodie" alt="A Polar Skate hoodie" width="250" height="250">
-            </a>
-                <p>Polar Skate Patch Hoodie</p>
-                <p>1 449 kr</p>
-        </div>
-
-        <div class="hotstuff">
-
-            <a href="singleproduct.html" alt="Dunk Reverse Panda">
-
-                <img src="nikedunkpandareverse.jpeg.jpg" title="A Nike Dunk Panda Reverse sneaker" alt="A Nike Dunk Panda Reverse sneaker" width="250" height="250">
-            </a>
-                <p>Nike Dunk Low Jumbo Reverse Panda</p>
-                <p>1 399 kr</p>
-
-        </div>
-
-        <div class="hotstuff removepic">
-
-            <a href="singleproduct.html" alt="Mob griptape">
-
-                <img src="mobgrip.jpeg" title="A mob griptape" alt="A mob griptape" width="250" height="250">
-            </a>
-                <p>Mob Griptape</p>
-                <p>99 kr</p>
-
-        </div>
-
+      <div class="hotstuff removepic">
+        <a href="singleproduct.html" alt="Mob griptape">
+          <img
+            src="pictures/mobgrip.jpeg"
+            title="A mob griptape"
+            alt="A mob griptape"
+            width="250"
+            height="250"
+          />
+        </a>
+        <p>Mob Griptape</p>
+        <p>99 kr</p>
+      </div>
     </aside>
 
     <main>
+      <img
+        class="removepic"
+        src="pictures/malmoflybildBRA.jpeg"
+        title="A picture of Malmo"
+        alt="Pic of Malmö"
+        width="600"
+        height="350"
+      />
+      <div>
+        <h3 class="titel">About Hoodies, Hardware &amp; Hypebeasts</h3>
 
-        <img class="removepic" src="malmoflybildBRA.jpeg" title="A picture of Malmo" alt="Pic of Malmö" width="600" height="350">
-            <div>
-
-                <h3 class="titel">About Hoodies, Hardware &amp; Hypebeasts</h3>
-            
-                <p class="lineheight">We are a webshop based in Malmoe, Sweden, with a passion for all things when 
-                it comes to style and skateboarding.
-                We started in the early 2000 with a small shop in central Malmoe, mostly focused on sneakers and skateboarding.
-                Now we have moved on to being a 100% web based shop, with a little pickup spot in Malmoe. When a sneaker drops we got it!
-                When a skater turns pro, we are the first with the board!
-                Everything is a limited supply and will be removed from the shop as soon as it’s out of stock.
-                All the things you see can be yours.</p>
-            
-        </div>
-        
+        <p class="lineheight">
+          We are a webshop based in Malmoe, Sweden, with a passion for all
+          things when it comes to style and skateboarding. We started in the
+          early 2000 with a small shop in central Malmoe, mostly focused on
+          sneakers and skateboarding. Now we have moved on to being a 100% web
+          based shop, with a little pickup spot in Malmoe. When a sneaker drops
+          we got it! When a skater turns pro, we are the first with the board!
+          Everything is a limited supply and will be removed from the shop as
+          soon as it’s out of stock. All the things you see can be yours.
+        </p>
+      </div>
     </main>
 
-        <h3 class="titel">Latest Sneaker Scoop</h3>
+    <h3 class="titel">Latest Sneaker Scoop</h3>
 
     <article>
-        
-        <div class="hotstuff">
+      <div class="hotstuff">
+        <a
+          href="Newscarharttxnewbalance.html"
+          title="Carhartt x New Balance news"
+        >
+          <img
+            src="pictures/Carhartt-New-Balance.jpg"
+            title="Carhartt x New Balance news"
+            width="200"
+            height="170"
+          />
+        </a>
 
-            <a href="Newscarharttxnewbalance.html" title="Carhartt x New Balance news">
-                
-                <img src="Carhartt-New-Balance.jpg" title="Carhartt x New Balance news" width="200" height="170">
-            
-            </a>
-            
-                <p>The Carhartt WIP x New Balance 990v6 “Sculpture Center”</p>
-            
-        </div>
+        <p>The Carhartt WIP x New Balance 990v6 “Sculpture Center”</p>
+      </div>
 
-        <div class="hotstuff">
+      <div class="hotstuff">
+        <a href="Newsairjordangunsmoke.html" title="Air Jordan Gunsmoke news">
+          <img
+            src="pictures/air-jordan-8-winter-black-gunsmoke.jpg"
+            title="Air Jordan Gunsmoke news"
+            width="200"
+            height="170"
+          />
+        </a>
 
-            <a href="Newsairjordangunsmoke.html" title="Air Jordan Gunsmoke news">
+        <p>First Look At The Air Jordan 8 Winter “Gunsmoke”</p>
+      </div>
 
-                <img src="air-jordan-8-winter-black-gunsmoke.jpg" title="Air Jordan Gunsmoke news" width="200" height="170">
+      <div class="hotstuff">
+        <a href="Newsjordans.html" title="Jordans">
+          <img
+            src="pictures/jordan-brand-holiday-2023-retro-releases.jpg"
+            title="News about Jordans"
+            width="200"
+            height="170"
+          />
+        </a>
 
-            </a>
-
-                <p>First Look At The Air Jordan 8 Winter “Gunsmoke”</p>
-            
-        </div>
-
-        <div class="hotstuff">
-
-            <a href="Newsjordans.html" title="Jordans">
-
-                <img src="jordan-brand-holiday-2023-retro-releases.jpg" title="News about Jordans" width="200" height="170">
-
-            </a>
-
-                <p>Jordan Brand Unveils Holiday 2023 Retro Footwear Releases</p> 
-
-        </div>
-        
+        <p>Jordan Brand Unveils Holiday 2023 Retro Footwear Releases</p>
+      </div>
     </article>
 
     <footer>
+      <div class="footer">
+        <h3>Help</h3>
+        <p>Customer Service</p>
+        <p>Returns</p>
+      </div>
 
-        <div class="footer">
-            <h3>Help</h3>
-            <p>Customer Service</p>
-            <p>Returns</p>
-        </div>
+      <div class="footer">
+        <h3>Hhh</h3>
+        <br />
+        <a
+          href="https://www.google.com/maps/dir//55.5901181,12.995515/@55.5903668,12.9955676,16.71z/data=!4m2!4m1!3e0?entry=ttu"
+          alt="Länk till adress"
+          title="Ön"
+          target="_blank"
+        >
+          Visit us
+        </a>
+      </div>
 
-        <div class="footer">
-            <h3>Hhh</h3>
-            <br>
-            <a href="https://www.google.com/maps/dir//55.5901181,12.995515/@55.5903668,12.9955676,16.71z/data=!4m2!4m1!3e0?entry=ttu" alt="Länk till adress" title="Ön" target="_blank">
-                Visit us
-            </a>
-        </div>
+      <div class="footer">
+        <h3>Social</h3>
+        <br />
+        <a
+          href="https://www.instagram.com/oliverknilsson/"
+          title="Instagram link"
+          target="_blank"
+          alt="Länk till instagram"
+          >Instagram</a
+        >
+      </div>
 
-        <div class="footer">
-            <h3>Social</h3>
-            <br>
-            <a href="https://www.instagram.com/oliverknilsson/" title="Instagram link" target="_blank" alt="Länk till instagram">Instagram</a>
-        </div>
+      <div class="footer">
+        <h3>Contact</h3>
+        <p>
+          Hhh - Hoodies, Hardware &amp; Hypebeasts<br />
+          Island in the middle of the Pildammspark<br />
+          214 28<br />
+          Malmoe<br />
+          Tele: 072 336 37 83<br />
+          Email:
+          <a href="mailto: oliverknilsson@gmail.com"
+            >oliverknilsson@gmail.com</a
+          >
+        </p>
+      </div>
 
-        <div class="footer">
-            <h3>Contact</h3>
-            <p>
-                Hhh - Hoodies, Hardware &amp; Hypebeasts<br>
-                Island in the middle of the Pildammspark<br>
-                214 28<br>
-                Malmoe<br>
-                Tele: 072 336 37 83<br>
-                Email: <a href="mailto: oliverknilsson@gmail.com">oliverknilsson@gmail.com</a>
-            </p>
-        
-    </div>
-
-    <div class="accordion">
+      <div class="accordion">
         <button class="accordion">HELP</button>
-    <div class="panel">
-
-    <p>Customer Service</p>
-    <p>Returns</p>
-
-    </div>
+        <div class="panel">
+          <p>Customer Service</p>
+          <p>Returns</p>
+        </div>
 
         <button class="accordion">HHH</button>
-    
-    <div class="panel">
-        <p><a href="https://www.google.com/maps/dir//55.5901181,12.995515/@55.5903668,12.9955676,16.71z/data=!4m2!4m1!3e0?entry=ttu" alt="Länk till adress" title="Ön" target="_blank">
-                Visit us
-            </a></p>
-    </div>
+
+        <div class="panel">
+          <p>
+            <a
+              href="https://www.google.com/maps/dir//55.5901181,12.995515/@55.5903668,12.9955676,16.71z/data=!4m2!4m1!3e0?entry=ttu"
+              alt="Länk till adress"
+              title="Ön"
+              target="_blank"
+            >
+              Visit us
+            </a>
+          </p>
+        </div>
 
         <button class="accordion">CONTACT</button>
-    <div class="panel">
-        <p> Hhh - Hoodies, Hardware &amp; Hypebeasts<br>
-            Island in the middle of the Pildammspark<br>
-            214 28<br>
-            Malmoe<br>
-            Tele: 072 336 37 83<br>
-            Email: <a href="mailto: oliverknilsson@gmail.com">oliverknilsson@gmail.com</a>
-        </p>
-    </div>
-
-    </div>
-
+        <div class="panel">
+          <p>
+            Hhh - Hoodies, Hardware &amp; Hypebeasts<br />
+            Island in the middle of the Pildammspark<br />
+            214 28<br />
+            Malmoe<br />
+            Tele: 072 336 37 83<br />
+            Email:
+            <a href="mailto: oliverknilsson@gmail.com"
+              >oliverknilsson@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
 
-<script>
-    
-    function toggleMenu() {
+    <script>
+      function toggleMenu() {
         var x = document.getElementById("link-container");
 
         if (x.style.display === "block") {
-            x.style.display = "none";
+          x.style.display = "none";
         } else {
-            x.style.display = "block";
+          x.style.display = "block";
         }
-    }
+      }
 
-    var acc = document.getElementsByClassName("accordion");
-var i;
+      var acc = document.getElementsByClassName("accordion");
+      var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
 
-    
-    var panel = this.nextElementSibling;
-    if (panel){
-    if ( panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-}
-  });
-}
-
-</script>
-    
-</body>
-
+          var panel = this.nextElementSibling;
+          if (panel) {
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
